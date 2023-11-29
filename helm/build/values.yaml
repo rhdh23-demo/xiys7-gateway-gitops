@@ -1,0 +1,15 @@
+app:
+  name: xiys7-poi-gateway-app
+  namespace: xiys7
+  cluster: .apps.rosa-pzz6v.9nln.p1.openshiftapps.com
+
+git:
+  branch: main
+  repo: https://github.com/rhdh23-demo/xiys7-gateway
+  org: rhdh23-demo
+  name: xiys7-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: xiys7/poi-gateway-app
+  tag: latest
